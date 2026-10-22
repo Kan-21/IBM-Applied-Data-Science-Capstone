@@ -1,0 +1,34 @@
+
+# Core data analysis
+numpy
+pandas
+
+# Data acquisition and web scraping
+requests
+beautifulsoup4
+lxml
+
+# Visualisation
+matplotlib
+seaborn
+plotly
+
+# Interactive dashboard
+dash
+
+# Geospatial analysis
+folium
+
+# Machine learning
+scikit-learn
+joblib
+
+# SQL analysis
+ipython-sql
+sqlalchemy
+
+# Jupyter environment
+jupyterlab
+notebook
+ipykernel
+ipywidgets
