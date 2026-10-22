@@ -1,0 +1,47 @@
+{
+  "dataset": "c:/Users/kanwa/Downloads/New folder/notebooks/data/processed/falcon9_labeled_historical.csv",
+  "dataset_rows": 90,
+  "train_rows": 67,
+  "test_rows": 23,
+  "features": [
+    "PayloadMass",
+    "Orbit",
+    "LaunchSite",
+    "BoosterVersion"
+  ],
+  "target": "Class (first-stage recovery)",
+  "selection_metric": "5-fold stratified CV balanced accuracy (training data only)",
+  "selected_model": "K-nearest neighbours",
+  "best_parameters": {
+    "model__n_neighbors": 9,
+    "model__weights": "distance"
+  },
+  "training_cv_balanced_accuracy": 0.695,
+  "holdout_metrics": {
+    "accuracy": 0.6956521739130435,
+    "balanced_accuracy": 0.5916666666666667,
+    "precision": 0.7,
+    "recall": 0.9333333333333333,
+    "f1": 0.8
+  },
+  "confusion_matrix_labels": [
+    0,
+    1
+  ],
+  "confusion_matrix": [
+    [
+      2,
+      6
+    ],
+    [
+      1,
+      14
+    ]
+  ],
+  "limitations": [
+    "Small historical dataset",
+    "Random split does not test future-year generalisation",
+    "Retrospective source data may contain corrections",
+    "Outcome is booster recovery, not mission success"
+  ]
+}
